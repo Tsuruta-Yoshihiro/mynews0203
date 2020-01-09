@@ -52,7 +52,7 @@
             </nav>
             {{-- ここまでナビゲーションバー --}}
             
-            <main class"py-4">
+            <main class="py-4">
                 {{-- コンテンツをここに入れるため、＠yieldで空けておきます。 --}}
                 @yield('content')
             </main>
