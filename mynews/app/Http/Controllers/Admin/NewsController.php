@@ -17,7 +17,7 @@ class NewsController extends Controller
 public function create(Request $request)
     {
       
-      $this->validete($request, News::$rules);
+      $this->validate($request, News::$rules);
       
       $news = new News;
       $form = $request->all();
@@ -32,7 +32,7 @@ public function create(Request $request)
       unset($form['_token']);
       unset($form['image']);
       
-      $news->fill($foem);
+      $news->fill($form);
       $news->save();
       return redirect('admin/news/create');
     }
