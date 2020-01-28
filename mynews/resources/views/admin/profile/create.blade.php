@@ -25,10 +25,12 @@
                             <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                         </div>
                     </div>
+                    
                     <div class="form-group row">
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="gender" value="{{ old('gender') }}">
+                            <label><input type="radio" class="form-control" name="gender" value="{{ old('1') }}">男</label>
+                            <label><input type="radio" class="form-control" name="gender" value="{{ old('2') }}">女</label>
                         </div>
                     </div>
                     <div class="form-group row">

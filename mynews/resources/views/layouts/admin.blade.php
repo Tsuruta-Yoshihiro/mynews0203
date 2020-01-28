@@ -7,7 +7,7 @@
         
         <!-- CSRF Token -->
          {{--最後の章で説明--}}
-        <meta name="scrf-token" content="{{ csrf_token() }}">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         
         {{--各ページごとにtitleタグを入れるために＠yieldで空けておきます。--}}
         <title>@yield('title')</title>
