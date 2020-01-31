@@ -68,7 +68,7 @@ public function create(Request $request)
         $profilehistory->edited_at = Carbon::now();
         $profilehistory->save();
         
-        return redirect('admin/profile');
+        return redirect('admin/profile/');
         
     }
 }
