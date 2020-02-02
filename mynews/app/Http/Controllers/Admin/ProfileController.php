@@ -15,7 +15,10 @@ class ProfileController extends Controller
     //
     public function add()
     {
-        return view('admin.profile.create');
+        //return view('admin.profile.create');
+        $profile = Profile::find (1);
+
+        return view('admin.profile.edit', ['profile_form' => $profile]);
     }
     
     
@@ -57,7 +60,7 @@ public function create(Request $request)
         $profilehistory->edited_at = Carbon::now();
         $profilehistory->save();
         
-        return redirect('admin/profile/');
+        return redirect('admin/profile/creat');
         
     }
 }
